@@ -1,12 +1,49 @@
-# React + Vite
+# Todo App — React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Todo App** is a small frontend application built with **React** and **Vite** that allows users to manage tasks efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 19  
+- Vite 7  
+- Sass (CSS Modules)  
+- localStorage / json-server  
+- Feature-Sliced Design (FSD)  
+- GitHub Actions  
+- GitHub Pages  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- Add and delete tasks  
+- Delete all tasks at once (with confirmation)  
+- Mark tasks as completed  
+- Search tasks with highlighted matches  
+- Separate task detail page  
+- Scroll to the first incomplete task  
+- Smooth animations for task appearance and removal  
+- Data persists in `localStorage`  
+- Two backend modes: `localStorage` or JSON server  
+- Custom router without third-party libraries  
+
+---
+
+## Project Structure
+
+The project is structured using **Feature-Sliced Design (FSD)**:
+
+```text
+src/
+├── app/              # App initialization, router, global styles
+├── pages/            # Pages (TasksPage, TaskPage)
+├── widgets/          # Composite blocks (Todo widget)
+├── features/         # User actions (add-task, search-task, stats)
+├── entities/         # Business entities (todo model & UI)
+└── shared/           # Reusable modules (api, ui components, hooks, utils)
+```
+##
+
+https://bitter-brain.github.io/todo-react/
