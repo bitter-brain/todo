@@ -1,10 +1,10 @@
 import { useContext } from 'react'
-import AddTaskForm from './AddTaskForm.jsx'
-import SearchTaskForm from './SearchTaskForm.jsx'
-import TodoInfo from './TodoInfo.jsx'
-import TodoList from './TodoList.jsx'
-import Button from './Button.jsx'
-import { TasksContext } from '../context/TasksContext.jsx'
+import AddTaskForm from '../../features/add-task/AddTaskForm.jsx'
+import SearchTaskForm from '../../features/search-task/SearchTaskForm.jsx'
+import TodoInfo from '../../features/stats/TodoInfo.jsx'
+import TodoList from '../../entities/todo/ui/TodoList/TodoList.jsx'
+import Button from '../../shared/ui/Button/Button.jsx'
+import { TasksContext } from '../../entities/todo/model/TasksContext.jsx'
 
 const Todo = () => {
   const { firstIncompleteTaskRef } = useContext(TasksContext)

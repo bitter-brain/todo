@@ -1,7 +1,7 @@
-import Field from './Field.jsx'
-import Button from './Button.jsx'
+import Field from '../../shared/ui/Field/Field.jsx'
+import Button from '../../shared/ui/Button/Button.jsx'
 import {useContext, useState} from 'react'
-import { TasksContext } from '../context/TasksContext.jsx'
+import { TasksContext } from '../../entities/todo/model/TasksContext.jsx'
 
 const AddTaskForm = () => {
   const {

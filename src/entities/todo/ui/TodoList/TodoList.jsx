@@ -1,7 +1,7 @@
 import {memo, useContext } from 'react'
 
-import TodoItem from './TodoItem.jsx'
-import { TasksContext } from '../context/TasksContext.jsx'
+import TodoItem from '../TodoItem/TodoItem.jsx'
+import { TasksContext } from '../../model/TasksContext.jsx'
 
 const TodoList = () => {
   const {
